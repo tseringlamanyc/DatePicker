@@ -68,22 +68,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-d1-pMx">
-                                <rect key="frame" x="183" y="466" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-d1-pMx">
+                                <rect key="frame" x="182.5" y="478.5" width="51" height="31"/>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The event is set for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-kw-VoX">
+                                <rect key="frame" x="101" y="339.5" width="212" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grH-zf-VT5">
+                                <rect key="frame" x="161.5" y="549.5" width="91" height="30"/>
+                                <state key="normal" title="Submit RSVP"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-Lo-TAs">
+                                <rect key="frame" x="155.5" y="376.5" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="OBA-kw-VoX" firstAttribute="centerX" secondItem="v6d-j4-zMj" secondAttribute="centerX" id="2OR-TR-TgO"/>
+                            <constraint firstItem="grH-zf-VT5" firstAttribute="centerX" secondItem="v6d-j4-zMj" secondAttribute="centerX" id="9dc-p6-XP6"/>
                             <constraint firstItem="3Ke-RY-khk" firstAttribute="centerX" secondItem="v6d-j4-zMj" secondAttribute="centerX" id="AuB-8m-zSC"/>
+                            <constraint firstItem="uBg-d1-pMx" firstAttribute="centerX" secondItem="v6d-j4-zMj" secondAttribute="centerX" id="BAS-KH-hsY"/>
+                            <constraint firstItem="3Ke-RY-khk" firstAttribute="top" secondItem="ScK-Lo-TAs" secondAttribute="bottom" constant="40" id="K2g-LO-kRc"/>
+                            <constraint firstItem="ScK-Lo-TAs" firstAttribute="centerX" secondItem="v6d-j4-zMj" secondAttribute="centerX" id="Qb8-y1-51W"/>
+                            <constraint firstItem="ScK-Lo-TAs" firstAttribute="top" secondItem="OBA-kw-VoX" secondAttribute="bottom" constant="8" id="YQC-on-q6n"/>
                             <constraint firstItem="3Ke-RY-khk" firstAttribute="centerY" secondItem="v6d-j4-zMj" secondAttribute="centerY" id="aPD-X7-iTQ"/>
+                            <constraint firstItem="uBg-d1-pMx" firstAttribute="top" secondItem="3Ke-RY-khk" secondAttribute="bottom" constant="20" id="idJ-es-Kcb"/>
+                            <constraint firstItem="grH-zf-VT5" firstAttribute="top" secondItem="uBg-d1-pMx" secondAttribute="bottom" constant="40" id="qaS-hC-MFN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3ng-Ls-IYb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG8-Qy-i9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2204" y="134"/>
+            <point key="canvasLocation" x="2202.898550724638" y="133.92857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XiJ-pN-fB3">
